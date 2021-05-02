@@ -22,6 +22,7 @@ func sol2(word bool) string {
 	return "Yes"
 }
 
+// test
 func main() {
 	println(BoolToWord(true))
 	println(sol1(true))
