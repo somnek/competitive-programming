@@ -19,5 +19,15 @@ fmt.Sprintf("%s -  %d", "apple", 7) => apple - 7
 !value: return bool of `NOT` value
 
 ## indexing
-string:
+trim string:
   "word"[1: len(word) - 1] -> will trim 1st & last character
+
+get indexes char
+  string("word"[0])
+
+
+## utils
+check variable type:
+  import "reflect"
+  println(reflect.TypeOf(x))
+
