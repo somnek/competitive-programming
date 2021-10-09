@@ -1,9 +1,11 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
 
 func RemoveChar(word string) string {
-	return word[1:len(word)-1]
+	return word[1 : len(word)-1]
 }
 
 func main() {

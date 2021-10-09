@@ -1,3 +1,14 @@
+## condition
+&&: and
+||: or
+
+- if else:
+    > if cond1{
+    > }else{ // else must be after '}' of if
+    > }
+
+
+
 ## variables
 var b, c int = 1, 2
 var d = true
@@ -12,11 +23,18 @@ map[KeyType]ValueType{KEY, VALUE}[input]
 import ("strconv")
 strconv.Itoa(n)
 
-## f-string
-fmt.Sprintf("%s -  %d", "apple", 7) => apple - 7
+## print
+- f string
+  fmt.Sprintf("%s -  %d", "apple", 7) => apple - 7
+- print array
+  fmt.Printf("%v", num_arr)
 
 ## bools
 !value: return bool of `NOT` value
+
+## arrays // slice ( ?? )
+- append to list:
+  arr = append(arr, e)
 
 ## indexing
 trim string:
@@ -48,6 +66,10 @@ for _, c := range 'word' {
   fmt.Printf("%c", c)
 }
 
+## increment (extras)
+- multiple by 2: <<
+- divide   by 2: >>
+
 
 ## utils
 check variable type:
@@ -58,3 +80,25 @@ check variable type:
 ## converstion
 - rune to string 
   string(c) // c is type of rune, from range loop
+
+
+
+
+``
+## qaveat
+- for function with multiple arguments:
+  if all the arguments has the same type
+  only have to specify once:
+  eg:
+  >  func SumOfPositive(numbers []int) (sum int) {
+  >    for _, n := range numbers {
+  >      if n >= 0 {sum += n}
+  >    }
+  >    return sum
+  >  }
+
+
+
+
+# refs
+- *Slice Tricks*: https://github.com/golang/go/wiki/SliceTricks

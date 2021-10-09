@@ -1,7 +1,5 @@
 package main
 
-//import ("strings")
-
 func SumOfPositive(numbers []int) (sum int) {
 	for _, n := range numbers {
 		if n >= 0 {sum += n}
@@ -9,6 +7,7 @@ func SumOfPositive(numbers []int) (sum int) {
 	return sum
 }
 
-func main() {
-	println()
+func main(){
+	input := []int{1, -6, 4, 5, -9}
+	println(SumOfPositive(input))
 }
