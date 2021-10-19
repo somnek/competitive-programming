@@ -19,10 +19,6 @@ f := "apple"
 ## map
 map[KeyType]ValueType{KEY, VALUE}[input]
 
-## conversion
-import ("strconv")
-strconv.Itoa(n)
-
 ## print
 - f string
   fmt.Sprintf("%s -  %d", "apple", 7) => apple - 7
@@ -78,9 +74,11 @@ check variable type:
 
 
 ## converstion
-- rune to string 
-  string(c) // c is type of rune, from range loop: 
-    ~ c, _ := strconv.Atoi(string(n)) // rune -> int
+import ("strconv")
+- rune to string  // c is type of rune, from range loop: 
+    ~ string(c)
+- rune to int     // rune -> int
+    ~ c, _ := strconv.Atoi(string(n))
 - int to string:
     ~ strconv.Itoa(n)
 

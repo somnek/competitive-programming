@@ -1,10 +1,9 @@
 package main
 
-func fact(n int) int {
-	if n == 0 {return 1}
-	return n * fact(n-1)
-}
+import (
+	"strings"
+)
 func main() {
-	x := 4 
-	println(fact(x))
+	println('x')
+	println(strings.ContainsRune("axb", 'x'))
 }
