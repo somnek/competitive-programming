@@ -1,9 +1,10 @@
 package main
 
 import (
-	"strings"
+	"fmt"
 )
+
 func main() {
-	println('x')
-	println(strings.ContainsRune("axb", 'x'))
+	var x = [...]int{1, 2, 4, 6}
+	fmt.Printf("%v", x)
 }

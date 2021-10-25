@@ -19,10 +19,10 @@ f := "apple"
 ## map
 map[KeyType]ValueType{KEY, VALUE}[input]
 
-## print
-- f string
-  fmt.Sprintf("%s -  %d", "apple", 7) => apple - 7
-- print array
+## f strings
+- assign f string
+  x := fmt.Sprintf("%s -  %d", "apple", 7) => apple - 7
+- print f string
   fmt.Printf("%v", num_arr)
 
 ## bools
@@ -70,7 +70,7 @@ for _, c := range 'word' {
 ## utils
 check variable type:
   import "reflect"
-  println(reflect.TypeOf(x))
+  fmt.Println(reflect.TypeOf(x))
 
 
 ## converstion
@@ -81,7 +81,17 @@ import ("strconv")
     ~ c, _ := strconv.Atoi(string(n))
 - int to string:
     ~ strconv.Itoa(n)
+- uint to string
+  var n uint = 14
+  s := strconv.FormatUint(uint64(n), 10)
 
+- list of int/uint to strings
+    # 1. strings.Replace(str, old, new, n) set n to -1 (no limit/replace all)
+      eg: 
+        using strings.Replace(numbers, " ", "", -1)
+        numbers := []uint{1, 2, 4, 5] -> "[1 2 3 4]"
+    # 2. strings.Trim(str, "[]")
+        "[1234]" -> "1234"
 
 
 
