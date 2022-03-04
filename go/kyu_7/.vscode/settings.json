@@ -1,0 +1,19 @@
+{
+    // set theme
+    "workbench.colorTheme": "Nord Wave",
+    "editor.fontFamily": "Dank Mono",
+    "editor.fontSize": 10,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "scope B",
+                "scope": [
+                    "entity.name.function",
+                ],
+                "settings": {
+                    "fontStyle": "italic bold",
+                }
+            }
+        ]
+    }
+}
