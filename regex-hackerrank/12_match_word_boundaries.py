@@ -22,7 +22,8 @@ ss = [
     'Eggs are a good source of protein.',
 ]
 regex = r'\b[aeiouAEIOU][a-zA-Z]*\b'
+
 for s in ss:
-    match = re.match(regex, s)
+    match = re.search(regex, s)
     print(match)
 
