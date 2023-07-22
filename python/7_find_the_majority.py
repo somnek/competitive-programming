@@ -17,6 +17,7 @@ def majority(arr):
 
 if __name__ == '__main__':
     print(majority([]))
+    print(majority(['']))
     print(majority(['a', 'b', 'c']))
     print(majority(['d', 'a', 'b', 'c', 'a']))
     print(majority(['a', 'b', 'b', 'a']))
