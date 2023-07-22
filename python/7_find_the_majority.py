@@ -1,5 +1,5 @@
 def majority(arr):
-    if not arr:
+    if not len(arr):
         return None
     d = {}
     for e in arr:
