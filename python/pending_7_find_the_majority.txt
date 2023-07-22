@@ -11,6 +11,9 @@ def majority(arr):
                 continue
             d[count] += e
     s = sorted(d.items())[-1]
+    if s[1] == '': 
+        return ''
+    print('len -> ', len(s[1]))
     return s[1][0] if len(s[1]) == 1 else None
 
 
