@@ -1,4 +1,5 @@
 *.vscode
 settings.json
 .DS_STORE
-
+**/pending/**
+decoy.*
